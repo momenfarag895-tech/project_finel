@@ -1,0 +1,33 @@
+ul,li
+{
+    list-style:none;    
+    display:flex;
+     gap: 10px;
+  margin: 0;
+  padding: 0;
+    
+}
+li:hover
+{
+    color:coral;
+}
+li:visited
+{
+    color:rgb(80, 203, 255);
+}
+li:active
+{
+    color:rgb(83, 80, 255);
+}
+
+.gloybal_css
+{
+    color:rgba(255, 255, 255, 1);
+    background-color:rgba(127, 211, 223, 1);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

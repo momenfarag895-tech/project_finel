@@ -1,0 +1,195 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    direction: ltr;
+    background-color: #f5f5f5;
+}
+
+.logLeft {
+    width: 50%;
+    min-height: 100vh;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logLeft h1 {
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #111;
+}
+
+.logLeft h5 {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.logLeft > p {
+    color: rgba(0, 0, 0, 0.445);
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.logForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 8px;
+}
+
+.logForm input {
+    width: 90%;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+
+.logForm input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.logForm i {
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.loginButton {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.logForm button {
+    background-color: rgba(127, 211, 223, 1);
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logForm button:hover {
+    background-color: rgb(95, 193, 207);
+}
+
+.loginButton p {
+    color: rgba(0, 0, 255, 0.418);
+    font-size: 11px;
+    margin: 0;
+}
+
+.logIcon {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.logIcon i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logIcon i:hover {
+    transform: translateY(-3px);
+}
+
+.logIcon i:nth-child(1) {
+    background-color: #0a66c2;
+}
+
+.logIcon i:nth-child(2) {
+    background-color: #e60023;
+}
+
+.logIcon i:nth-child(3) {
+    background-color: #1877f2;
+}
+
+.logIcon i:nth-child(4) {
+    background-color: #1da1f2;
+}
+
+.logRite {
+    width: 50%;
+    min-height: 100vh;
+    position: relative;
+    background-color: bisque;
+    background-image: url("../assets/img/login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logRite .nav_link {
+    width: 100px;
+    padding: 10px 5px;
+    border: none;
+    text-align: center;
+    font-size: 11px;
+    border-radius: 0 7px 7px 0;
+    background-color: white;
+    color: #222;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logRite .nav_link.active {
+    background-color: rgba(127, 211, 223, 1);
+    color: white;
+}
+
+.logRite .nav_link:hover {
+    width: 115px;
+}
+
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column;
+    }
+
+    .logLeft,
+    .logRite {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .logForm {
+        width: 70%;
+    }
+
+    .logRite {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logForm {
+        width: 85%;
+    }
+
+    .logLeft h1 {
+        font-size: 28px;
+    }
+
+    .logLeft h5 {
+        font-size: 14px;
+    }
+}
